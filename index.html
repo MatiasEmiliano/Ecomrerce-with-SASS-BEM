@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script src="js/main.js" defer></script>
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+
+<body>
+  <header>
+    <nav class="menu">
+      <img class="menu__menu-mobile" src="images/icon-menu.svg" alt="">
+      <img class="menu__logo" src="images/logo.svg" alt="">
+      <ul class="menu__items-list">
+        <img class="menu__close" src="images/icon-close.svg" alt="">
+        <li class="menu__item"><a class="menu__link" href="">Collections</a></li>
+        <li class="menu__item"><a class="menu__link" href="">Men</a></li>
+        <li class="menu__item"><a class="menu__link" href="">Women</a></li>
+        <li class="menu__item"><a class="menu__link" href="">About</a></li>
+        <li class="menu__item"><a class="menu__link" href="">Contact</a></li>
+      </ul>
+      <div class="menu__rigth-items">
+          <img class="menu__img-cart" src="images/icon-cart.svg" alt="">
+          <p class="menu__cart-number">0</p>
+          <img class="menu__img-avatar" src="images/image-avatar.png" alt="">
+      </div>
+    </nav>
+
+    <div class="modal-cart">
+      <h1 class="modal-cart__title">Cart</h1>
+      <div class="modal-cart__main-container">
+        <!-- Product Container -->
+        <div class="modal-cart__container-product">
+          <img src="images/image-product-1-thumbnail.jpg" alt="" class="modal-cart__img-product">
+          <span class="modal-cart__empty">Empty</span>
+          <!-- Text Container -->
+          <div class="modal-cart__text-container">
+            <h1 class="modal-cart__title-product">Fall Limited Edition Sneakers</h1>
+            <span class="modal-cart__price-prodcuct">$125.00</span>
+            <span class="modal-cart__cantidad">x0</span>
+            <span class="modal-cart__total">$0<span>
+          </div>
+          <img class="modal-cart__delete" src="images/icon-delete.svg" alt="">
+        </div>
+        <!-- Button Checkout -->
+        <button class="button-chart button-chart--large">
+          <p class="button-chart__label">CheckOut</p>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="card card--horizontal card--vertical">
+      <div class="card__images-container card__images-container--w-half card__images-container--w-whole">
+        <div class="images">
+          <div class="images__main-img-container">
+            <img class="images__main-img" src="images/image-product-1.jpg" alt="">
+            <div class='images__button-next-container images__button-container--hide images__button-container--show'>
+              <svg class='images__button-next-svg' width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path d="m2 1 8 8-8 8" stroke-width="3" stroke="currentcolor" fill="none" fill-rule="evenodd" />
+              </svg>
+            </div>
+            <div class='images__button-prev-container images__button-container--hide images__button-container--show'>
+              <svg class='images__button-prev-svg' width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path d="m2 1 8 8-8 8" stroke-width="3" stroke="currentcolor" fill="none" fill-rule="evenodd" />
+              </svg>
+            </div>
+          </div>
+          <div class="images__thumb-container">
+            <img id="1" class="images__thumbnail" src="images/image-product-1-thumbnail.jpg" alt="">
+            <img id="2" class="images__thumbnail" src="images/image-product-2-thumbnail.jpg" alt="">
+            <img id="3" class="images__thumbnail" src="images/image-product-3-thumbnail.jpg" alt="">
+            <img id="4" class="images__thumbnail" src="images/image-product-4-thumbnail.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="card__text-container card__text-container--w-half card__text-container--w-whole">
+        <h1 class="card__title-company">Sneaker Company</h1>
+        <h1 class="card__title-product">Fall Limited Edition Sneakers</h1>
+        <p class="card__desc-product">These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div>
+          <h1 class="card__price-now">$125.00</h1>
+          <p class="card__discount">50%</p>
+        </div>
+        <h1 class="card__price-before">$250.00</h1>
+        <div class="card__buttons-container">
+          <div class="button-cantidad">
+            <button class="button-cantidad__minus"><img class="button-cantidad__minus-img" src="images/icon-minus.svg"
+                alt=""></button>
+            <p class="button-cantidad__label button-cantidad__label--mobile">0</p>
+            <button class="button-cantidad__plus"><img class="button-cantidad__plus-img" src="images/icon-plus.svg"
+                alt=""></button>
+          </div>
+          <button class="button-chart button-chart--mobile"><img class="button-chart__img" src="images/icon-cart.svg"
+              alt="">
+            <p class="button-chart__label">Add to cart</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <div class="modal">
+    <div class="modal__container">
+      <img class="modal__close" src="images/icon-close.svg" alt="">
+      
+      <div class="images">
+        <div class="images__main-img-container">
+          <img class="images__main-img" src="images/image-product-1.jpg" alt="">
+          <div class='images__button-next-container'>
+            <svg class='images__button-next-svg' width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+              <path d="m2 1 8 8-8 8" stroke-width="3" stroke="currentcolor" fill="none" fill-rule="evenodd" />
+            </svg>
+          </div>
+          <div class='images__button-prev-container'>
+            <svg class='images__button-prev-svg' width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+              <path d="m2 1 8 8-8 8" stroke-width="3" stroke="currentcolor" fill="none" fill-rule="evenodd" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="images__thumb-container images__thumb-container--litle">
+          <img id="1" class="images__thumbnail" src="images/image-product-1-thumbnail.jpg" alt="">
+          <img id="2" class="images__thumbnail" src="images/image-product-2-thumbnail.jpg" alt="">
+          <img id="3" class="images__thumbnail" src="images/image-product-3-thumbnail.jpg" alt="">
+          <img id="4" class="images__thumbnail" src="images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <footer>
+
+    <div class="attribution">
+      Challenge by <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank">Frontend Mentor</a>.
+      Coded by <a class="attribution__link" href="https://github.com/MatiasEmiliano" target="blank">MatiasEmiliano</a>.
+    </div>
+  </footer>
+</body>
+
+</html>
